@@ -46,3 +46,13 @@ alias terminatorhere='terminator --working-directory=$(pwd)'
 EOT
 
 
+wget https://nodejs.org/dist/v6.11.4/node-v6.11.4-linux-x64.tar.xz
+tar -xvf node-v6.11.4-linux-x64.tar.xz
+PATH="$PATH:$(pwd)/node-v6.11.4-linux-x64/bin/"
+
+git clone https://github.com/acrisci/i3-style.git
+(cd i3-style && npm install && ./lib/i3-style flat-gray -o ~/.config/i3/config --reload)
+
+
+
+
