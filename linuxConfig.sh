@@ -53,6 +53,6 @@ PATH="$PATH:$(pwd)/node-v6.11.4-linux-x64/bin/"
 git clone https://github.com/acrisci/i3-style.git
 (cd i3-style && npm install && ./lib/i3-style flat-gray -o ~/.config/i3/config --reload)
 
-
+sed -i -e 's/font/font pango:Dejavu Sans Mono 12/g' ~/.config/i3/config
 
 
