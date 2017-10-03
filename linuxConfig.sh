@@ -38,6 +38,11 @@ if [ "$set" -eq "0" ]; then
 	done
 fi
 
-
+cat <<EOT >> ~/.bashrc
+/usr/games/fortune -s
+alias disarmstation='xrandr --output DP1 --off && setxkbmap es'
+alias armstation='xrandr --output DP1 --auto --right-of eDP1 && setxkbmap us'
+alias terminatorhere='terminator --working-directory=$(pwd)'
+EOT
 
 
