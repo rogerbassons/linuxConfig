@@ -1,0 +1,16 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil)
+(setq url-cookie-secure-storage
+ '(("reddit.com"
+  [url-cookie "Max-Age" "7199" "26-Sep-2017 21:58:03.00 GMT" "/" "reddit.com" t]
+  [url-cookie "loid" "00000000000f5xoun3.2.1506455829679.Z0FBQUFBQlp5ckVWcWhfcWI0aDh6YUhnUjBJUGMtSXE0TUU1dk0tV2JPNXF4UDhMTWdoSm1xRlJtZUFsT1dXVmtySDRlTHhrZEFZQXBSTkc4eTRONC0tZFBvMmhxelNta2dvWnJ5NTNLc3liZDBhX0NmTWhyN1NtNTgtOXZqOXU2UEc4N0JkdE1sME8" "26-Sep-2019 19:57:09.00 GMT" "/" "reddit.com" t]
+  [url-cookie "session_tracker" "3tCEXGl8xSIZ7xGGo9.0.1506455883218.Z0FBQUFBQlp5ckZMWldwYmgzMnJNT05RNmotcWlzMWhNckU0c01BeWJwMlVTOHNjMzh0dTdhQ2ZpTUpzM1RmdVBkUTdfaC1xLXJ0X3FBRVItaW82UFJtdUFQRmE3ZTIzMGUwZUJwazc0cXFNS2ttLVB6c29tR0NtQ1gyblJrSE5NdW9YLW1uMk9wWE4" "26-Sep-2017 21:58:03.00 GMT" "/" "reddit.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
