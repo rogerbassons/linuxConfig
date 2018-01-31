@@ -39,4 +39,4 @@ if has('gui_running')
 endif
 set autoindent
 set cindent
-
+set t_Co=256
