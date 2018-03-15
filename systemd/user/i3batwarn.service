@@ -1,0 +1,5 @@
+[Unit]
+Description=Run i3 battery warning script
+
+[Service]
+ExecStart=/home/roger/Documents/i3batwarn.sh
