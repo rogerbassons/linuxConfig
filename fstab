@@ -1,12 +1,13 @@
-
+# /etc/fstab: static file system information.
 #
-# /etc/fstab
-# Created by anaconda on Wed Oct 11 22:54:38 2017
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
 #
-# Accessible filesystems, by reference, are maintained under '/dev/disk'
-# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
-#
-/dev/mapper/fedora-root         /                       ext4    defaults                                    1 1
-UUID=7DF7BAF94970C1A3           /mnt/data               ntfs-3g rw,uid=1000,gid=1000,dmask=0002,fmask=0003  0 0
-/dev/mapper/fedora-swap         swap                    swap    defaults                                    0 0
-/dev/mapper/fedora-linuxData    /mnt/linuxData          ext4    defaults                                    1 1
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/LinuxVG-linuxRoot /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda2 during installation
+UUID=5EB8-3212  /boot/efi       vfat    umask=0077      0       1
+/dev/mapper/LinuxVG-linuxData /mnt/linuxData  btrfs   defaults        0       0
+/dev/mapper/LinuxVG-swap none            swap    sw              0       0
+/dev/sda6 /mnt/data ntfs-3g rw,uid=1000,gid=1000,dmask=0002,fmask=0003 0 0
