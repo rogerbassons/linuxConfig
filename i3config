@@ -195,7 +195,7 @@ mode "$mode_gaps_outer" {
 }
 
 smart_gaps on
-smart_borders on|no_gaps
+#smart_borders on|no_gaps
 gaps inner 10
 gaps outer 5
 exec --no-startup-id dbus-update-activation-environment --systemd --all
