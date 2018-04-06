@@ -33,7 +33,8 @@ filetype plugin indent on    " required
 
 set laststatus=2
 syntax enable
-colorscheme molokai
+set background=light
+colorscheme PaperColor
 if has('gui_running')
   set guifont=Monospace\ 13
 endif
