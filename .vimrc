@@ -15,6 +15,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rhysd/vim-grammarous'
+Plugin 'xuhdev/vim-latex-live-preview'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,12 +34,18 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 set laststatus=2
+
 syntax enable
+set t_Co=256
 set background=light
 colorscheme PaperColor
 if has('gui_running')
   set guifont=Monospace\ 13
 endif
+
 set autoindent
 set cindent
-set t_Co=256
+
+set autochdir
+
+let g:livepreview_previewer = 'mupdf'
