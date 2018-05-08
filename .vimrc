@@ -10,13 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'itchyny/lightline.vim'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'rhysd/vim-grammarous'
-Plugin 'xuhdev/vim-latex-live-preview'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
