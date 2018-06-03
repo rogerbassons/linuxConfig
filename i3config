@@ -202,8 +202,8 @@ bar {
 #########################################################
 
 exec --no-startup-id dbus-update-activation-environment --systemd --all
-exec --no-startup-id setxkbmap -layout es,us
-exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap -layout es
+#exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
 
 bindsym Control+mod1+l exec i3lock -u -c "#000000"
 bindsym Control+mod1+s exec i3lock -u -c "#000000" && systemctl suspend
@@ -227,8 +227,8 @@ bindsym XF86AudioPrev exec playerctl previous
 
 exec --no-startup-id nm-applet
 #exec --no-startup-id /usr/bin/pasystray
-exec --no-startup-id nitrogen --restore
-#exec --no-startup-id xsetroot -solid "#202020"
+#exec --no-startup-id nitrogen --restore
+exec --no-startup-id hsetroot -solid "#000000"
 exec --no-startup-id redshift -l geoclue2
 exec --no-startup-id xset dpms 0 0 0 && xset s off -dpms
 exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-swc
